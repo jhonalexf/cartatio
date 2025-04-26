@@ -490,7 +490,25 @@ footer {
           margin: 0;
           font-size: 1.5rem;
         }
-
+        
+        @media screen and (max-width: 768px) {
+          .contenedor-horarios {
+            margin: 30px auto;          /* centra horizontalmente */
+            padding: 20px;
+            width: 90%;                 /* ocupa el 90% del ancho en móviles */
+            box-sizing: border-box;     /* evita que padding empuje fuera del viewport */
+          }
+        
+          .contenedor-horarios h3 {
+            font-size: 1.6rem;
+            text-align: center;
+          }
+        
+          .horarios-detalle p {
+            font-size: 1.2rem;
+            text-align: center;
+          }
+        }
         @media screen and (max-width: 768px) {
           .contenedor-ubicacion-flex {
             flex-direction: column;
