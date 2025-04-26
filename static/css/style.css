@@ -184,8 +184,8 @@ section {
           display: flex;
           align-items: center;
           position: absolute;
-          bottom: 500px;
-          right: 190px;
+          bottom: 600px;
+          right: 350px;
         }
         .boton-inicio {
           background: #d3921a;
