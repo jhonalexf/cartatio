@@ -146,6 +146,49 @@ footer {
   transform: scale(1.02);
 }
 
+
+.logo-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px; /* Esto los baja desde la barra */
+  position: static; /* Quita el absolute que desalineaba */
+}
+
+.logo-inicio img {
+  max-width: 260px;
+  height: auto;
+  position: static;
+}
+
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px; /* Espacio entre logo y botón */
+  position: static;
+}
+
+.boton-inicio {
+  padding: 18px 40px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.boton-inicio {
+  background: #d3921a;
+  color: white;
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px 70px;
+  border-radius: 40px;
+  font-size: 2rem;
+  transition: background 0.3s ease;
+}
+
+.boton-inicio:hover {
+  background: #f57c00;
+}
+
 @media screen and (max-width: 768px) {
   body {
     background-image: url("../images/fondoinicio.png"); /* fondo más liviano para móviles */
@@ -165,7 +208,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px; /* Esto los baja desde la barra */
+    margin-top: 40px; /* Esto los baja desde la barra */
     position: static; /* Quita el absolute que desalineaba */
   }
 
@@ -196,7 +239,6 @@ footer {
     background-attachment: scroll;
   }
 }
-
 
 
 .boton-inicio {
