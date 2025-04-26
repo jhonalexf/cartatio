@@ -182,7 +182,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   body {
-    background-image: url("../images/fondo_playa_movil.png"); /* fondo más liviano para móviles */
+    background-image: url("../images/movil1.png"); /* fondo más liviano para móviles */
     background-attachment: scroll;
     background-size: cover;
     background-position: center;
