@@ -190,7 +190,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   body {
-    background-color: #355f79;
+    background-image: url('../images/movil1.png');
   }
 }
 /* Responsive para pantallas pequeñas */
