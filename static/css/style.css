@@ -17,6 +17,9 @@ html, body {
   overflow-y: auto
 
 }
+main {
+  padding-top: 80px; /* Espacio para la barra de navegación */
+}
 
 section {
   margin: 0;
