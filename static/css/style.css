@@ -17,9 +17,6 @@ html, body {
   overflow-y: auto
 
 }
-main {
-  padding-top: 80px; /* Espacio para la barra de navegación */
-}
 
 section {
   margin: 0;
@@ -48,6 +45,8 @@ footer {
   padding: 10px 20px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
   position: fixed;
+  left: 0;
+  width: 100%;
   top: 0;
   z-index: 1000;
 }
