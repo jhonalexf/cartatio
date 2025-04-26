@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+ <!-- HERO BANNER DE HISTORIA -->
+<section class="hero-historia">
+  
+  <div class="overlay-historia">
+    <h1>HISTORIA</h1>
+  </div>
+</section>
+
+<section class="historia-seccion">
+  <div class="contenedor-historia">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo-historia">
+    
+    <div class="historia-contenido">
+      <div class="texto-historia">
+        <h2>HISTORIA</h2>
+        <p>
+          Para Nosotros la cocina es una pasión, la vivimos en cada plato, en cada elaboración... permitanos servirle y viva una experiencia única junto a ese ser especial y amado, seres queridos o amigos mas allegados. Para lo cual hemos estudiado, investigado, viajado y acogido diferentes recetas, productos y especias de diferentes provincias costeras, son; La provincia de Esmeraldas (Las conchitas negras y los cocos). La Provincia de Manabi ( El Picudo, El Camarón, La Corvina Rosada). La Provincia del Guayas (El
+          Encebolllado), Etc.
+          Todos los productos, recetas y tradiciones encontradas, las hemos adaptado y dado nuestro toque único para que Ud. Sr. Cliente que es nuestro invitado especial al momento de seleccionar nuestro establecimiento, se deleite y tenga
+          una bonita experiencia.
+        </p>
+        <p>
+          Cada elaboración que llega a su mesa está cargada de historia, dedicación y respeto por los sabores auténticos. Permítanos servirle y hacerle vivir un momento único, ya sea en compañía de ese ser especial que tanto quiere, rodeado de su familia, o junto a sus amigos más cercanos y queridos.
+
+        </p>
+      </div>
+      <div class="imagenes-historia">
+        <img src="{{ url_for('static', filename='images/familia1.png') }}" alt="Foto historia 1">
+        <img src="{{ url_for('static', filename='images/familia2.png') }}" alt="Foto historia 2">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

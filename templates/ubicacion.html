@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="ubicacion-info-layout">
+
+  <!-- 🟣 COLUMNA IZQUIERDA: Tarjeta Biloxi -->
+  <div class="sucursal">
+    <h3>BILOXI, SUR DE QUITO</h3>
+    <div class="info-ubicacion">
+      <img src="{{ url_for('static', filename='icons/location.png') }}" alt="ubicación">
+      <p>CALLE: OE7B<br>Quito, Pichincha</p>
+    </div>
+    <div class="info-ubicacion">
+      <img src="{{ url_for('static', filename='icons/telefono.png') }}" alt="teléfono">
+      <p>Teléfono: (+593) 97 927 5742<br>Quito, Contactarse para reservaciones</p>
+    </div>
+    <div class="info-ubicacion">
+      <img src="{{ url_for('static', filename='icons/reloj.png') }}" alt="horario">
+      <p>09:00 AM - 17:00 PM<br>Lun, Mar, Mie, Jue, Vie, Sab, Dom</p>
+    </div>
+  </div>
+
+  <!-- 🟡 COLUMNA CENTRAL: Mapa -->
+  <div class="mapa-ubicacion">
+    <iframe src="https://www.google.com/maps?q=-0.2578083,-78.5460649&z=17&hl=es&output=embed" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <!-- 🔵 COLUMNA DERECHA: Redes sociales -->
+  <div class="redes-contacto-lado">
+    <a href="https://wa.me/593979275742" target="_blank" class="btn-whatsapp">
+      <img src="{{ url_for('static', filename='icons/whatsapp.png') }}" alt="WhatsApp">
+      Escríbenos por WhatsApp
+    </a>
+    <div class="tarjetas-redes">
+      <a href="https://www.facebook.com/lasconchitasasadasdelabiloxi" target="_blank" class="tarjeta-red-social">
+        <img src="{{ url_for('static', filename='icons/facebook.png') }}" alt="Facebook"> Facebook
+      </a>
+      <a href="https://www.instagram.com/lasconchitasasadasdelabiloxi" target="_blank" class="tarjeta-red-social">
+        <img src="{{ url_for('static', filename='icons/tiktok.png') }}" alt="TikTok"> TikTok
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<!-- SECCIÓN 1: Fondo con logo y botón -->
+<section class="inicio-tropical seccion-scroll"> 
+  <div class="fila-inferior">
+    <div class="logo-inicio">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo-animado">
+    </div>
+    <div class="contenedor-boton">
+      <a href="https://wa.me/593968017735" target="_blank" class="boton-inicio"> RESERVACIONES </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN DE GALERÍA DE IMÁGENES -->
+<section class="tentaciones seccion-scroll">
+  <section class="galeria-inicio">
+    <div class="contenedor-galeria">
+      <img src="{{ url_for('static', filename='images/familia3.jpg') }}" alt="Plato 1">
+      <img src="{{ url_for('static', filename='images/familia4.jpg') }}" alt="Plato 2">
+      <img src="{{ url_for('static', filename='images/familia5.jpg') }}" alt="Plato 3">
+      <img src="{{ url_for('static', filename='images/familia6.jpg') }}" alt="Plato 4">
+      <img src="{{ url_for('static', filename='images/familia7.jpg') }}" alt="Plato 5">
+      <img src="{{ url_for('static', filename='images/familia8.jpg') }}" alt="Plato 6">
+    </div>
+  </section>
+
+
+<!-- SECCIÓN 2: Galería y descripción -->
+
+  <div class="contenedor-tentacion">
+    <div class="galeria-tentacion">
+      <img src="{{ url_for('static', filename='images/conchasasadas.png') }}" alt="Plato 1">
+      <img src="{{ url_for('static', filename='images/a_la_costa.png') }}" alt="Plato 2">
+      <img src="{{ url_for('static', filename='images/plato_tiktok.png') }}" alt="Plato 3">
+      <img src="{{ url_for('static', filename='images/corvina_salsa_mariscos.png') }}" alt="Plato 4">
+    </div>
+    <div class="texto-tentacion">
+      <h2>LAS CONCHITAS ASADAS DE LA BILOXI </h2>
+      <p>
+        Trae a toda tu familia y compartan juntos una experiencia inolvidable de sabor y alegría.
+        En nuestro restaurante, no solo te ofrecemos los mejores platos del mar, sino también una atención que te hará sentir como en casa.
+        Nuestro propósito es que te vayas con el corazón contento y el paladar pidiendo volver..
+      </p>
+      <a href="{{ url_for('menu') }}" class="boton-menu-completo">VER EL MENÚ COMPLETO</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 3: Beneficios -->
+<section class="beneficios seccion-scroll">
+  <div class="beneficio">
+    <img src="{{ url_for('static', filename='icons/pago.png') }}" alt="Pagos">
+    <h4>PAGOS</h4>
+    <p>Efectivo o Transferencia bancaria</p>
+  </div>
+  <div class="beneficio">
+    <img src="{{ url_for('static', filename='icons/descuento.png') }}" alt="Económico">
+    <h4>ECONÓMICO</h4>
+    <p>Los mejores platos al mejor precio </p>
+  </div>
+  <div class="beneficio">
+    <img src="{{ url_for('static', filename='icons/seguro.png') }}" alt="Seguro">
+    <h4>SEGURO</h4>
+    <p>Productos seleccionados con calidad premium</p>
+  </div>
+  <!-- SECCIÓN 3 : Mapa de ubicación -->
+  <div class="contenedor-horarios">
+    <h3>HORARIOS DE ATENCIÓN DEL RESTAURANTE</h3>
+    <div class="horarios-detalle">
+      <p><strong>De Lunes a Viernes</strong><br>09:00am – 17:00pm</p>
+      <p><strong>Sábados, Domingos y feriados</strong><br>09:00am – 17:00pm</p>
+    </div>
+  </div>
+  </section>
+
+<!-- SECCIÓN 5 : Mapa de ubicación -->
+<section class="seccion-ubicacion seccion-scroll">
+  <div class="contenedor-ubicacion">
+    <h3>NUESTRA UBICACIÓN</h3>
+    <iframe 
+      src="https://www.google.com/maps?q=-0.2578083,-78.5460649&z=17&hl=es&output=embed"
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  
+</section>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Las Conchitas Asadas De LA Biloxi </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+     
+<body>
+
+  {% if request.path == '/' %}
+    <div class="scroll-indicator">
+      <div class="dot active" data-index="0"></div>
+      <div class="dot" data-index="2"></div>
+      <div class="dot" data-index="3"></div>
+      <div class="dot" data-index="5"></div>
+    </div>
+  {% endif %}
+
+  <!-- Barra de navegación -->
+  <header class="navbar">
+    <div class="container-nav">
+      <a href="{{ url_for('home') }}" class="logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Las Conchitas">
+      </a>
+      <nav class="nav-links">
+        <a href="/" class="{% if request.path == '/' %}active{% endif %}">INICIO</a>
+        <a href="/historia" class="{% if request.path == '/historia' %}active{% endif %}">HISTORIA</a>
+        <a href="/menu" class="{% if request.path == '/menu' %}active{% endif %}">MENÚ</a>
+        <a href="/ubicacion" class="{% if request.path == '/ubicacion' %}active{% endif %}">UBICACIÓN</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido dinámico -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+   
+      <div class="iconos-sociales-img">
+        <a href="https://www.facebook.com/people/Nuestras-Conchitas-Asadas/100072296084667/#" target="_blank" title="Facebook">
+          <img src="{{ url_for('static', filename='icons/facebook.png') }}" alt="Facebook">
+        </a>
+        <a href="https://www.tiktok.com/@aguila9479?_t=ZM-8vppYTu7DHC&_r=1" target="_blank" title="tiktok">
+          <img src="{{ url_for('static', filename='icons/tiktok.png') }}" alt="tiktok">
+        </a>
+      </div>
+    <p>&copy; 2025 Las Conchitas Asadas de la Biloxi. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

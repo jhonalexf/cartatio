@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="menu-principal">
+  <div class="menu-container">
+
+    <!-- Categorías laterales -->
+    <aside class="menu-categorias">
+      <h3>Categorías</h3>
+      <ul>
+        <li><button class="btn-categoria active" data-target="todas">TODOS LOS PLATOS </button></li>
+        {% for categoria in platos.keys() %}
+          <li><button class="btn-categoria" data-target="{{ categoria | replace(' ', '_') }}">{{ categoria }}</button></li> 
+        {% endfor %}
+      </ul>
+
+      <!-- FILTRO DE TAMAÑO Y PRECIO -->
+      <div class="filtro-tamano-precio">
+        <h3>POR PRECIO :</h3>
+        <label for="rangoPrecio">Precio: <span id="rango-min">$3 "Min"</span> — <span id="rango-max">$20 "Max"</span></label>
+        <input type="range" id="rangoPrecio" min="3" max="20" value="20" step="1" style="width: 100%;">
+        <a href="https://wa.me/593979275742" target="_blank" class="btn-whatsapp-menu">
+          <img src="{{ url_for('static', filename='icons/whatsapp.png') }}" alt="WhatsApp">
+          Escríbenos por WhatsApp
+        </a>
+        <a href="{{ url_for('static', filename='icons/menu.pdf') }}" target="_blank" class="btn-carta-digital">
+          <img src="{{ url_for('static', filename='icons/menu.png') }}" alt="Carta digital">
+          Ver carta digital
+        </a>
+        
+      </div>
+    </aside>
+
+    <!-- Secciones de platos -->
+    <div class="menu-secciones">
+      <div class="menu-items">
+        {% for categoria, items in platos.items() %}
+          {% for plato in items %}
+            <div class="menu-card" data-precio="{{ plato.precio }}" data-categoria="{{ categoria | replace(' ', '_') }}">
+              <img src="{{ url_for('static', filename='images/' ~ plato.imagen) }}" alt="{{ plato.nombre }}">
+              <div class="info">
+                <h3>{{ plato.nombre }}</h3>
+                <p>{{ plato.descripcion }}</p>
+
+                {% if categoria != 'BEBIDAS' and categoria != 'PORCIONES' %}
+                  <span class="precio">$ {{ '%.2f'|format(plato.precio) }}</span>
+                {% else %}
+                  <span class="precio sin-precio"></span>
+                {% endif %}
+
+              </div>
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const botones = document.querySelectorAll('.btn-categoria');
+    const tarjetas = document.querySelectorAll('.menu-card');
+    const slider = document.getElementById('rangoPrecio');
+    const rangoMax = document.getElementById('rango-max');
+
+    let categoriaActiva = "todas";
+
+    function aplicarFiltro() {
+      const precioMax = parseFloat(slider.value);
+
+      tarjetas.forEach(tarjeta => {
+        const precio = parseFloat(tarjeta.dataset.precio);
+        const categoria = tarjeta.dataset.categoria;
+
+        const cumplePrecio = precio <= precioMax;
+        const cumpleCategoria = (categoriaActiva === "todas" || categoria === categoriaActiva);
+
+        tarjeta.style.display = (cumplePrecio && cumpleCategoria) ? 'flex' : 'none';
+      });
+    }
+
+    botones.forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoriaActiva = btn.dataset.target;
+
+        botones.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        aplicarFiltro();
+      });
+    });
+
+    slider.addEventListener('input', () => {
+      rangoMax.textContent = `$${slider.value}`;
+      aplicarFiltro();
+    });
+
+    aplicarFiltro();
+  });
+</script>
+
+{% endblock %}
