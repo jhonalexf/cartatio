@@ -44,7 +44,7 @@ footer {
   background: linear-gradient(90deg, #302f2f, #302e2e);
   padding: 10px 20px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
 }
