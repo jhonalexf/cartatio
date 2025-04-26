@@ -698,6 +698,7 @@ font-family: 'Open Sans', sans-serif;
         .filtro-tamano-precio label {
           font-size: 0.95rem;
           font-weight: normal;
+          color: white;
         }
         .filtro-tamano-precio input[type="checkbox"] {
           transform: scale(1.2);
