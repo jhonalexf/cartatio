@@ -154,12 +154,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 187px; /* Esto los baja desde la barra */
+  margin-top: 187px; /* Esto los baja desde la barra, mientras mas sube el numero hay mas espacio */
   position: static; /* Quita el absolute que desalineaba */
 }
 
 .logo-inicio img {
-  max-width: 390px;
+  max-width: 410px;
   height: auto;
   position: static;
 }
@@ -211,7 +211,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px; /* Esto los baja desde la barra */
+    margin-top: 90px; /* Esto los baja desde la barra */
     position: static; /* Quita el absolute que desalineaba */
   }
 
