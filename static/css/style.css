@@ -154,7 +154,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px; /* Esto los baja desde la barra */
+  margin-top: 150px; /* Esto los baja desde la barra */
   position: static; /* Quita el absolute que desalineaba */
 }
 
