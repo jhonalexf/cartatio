@@ -519,7 +519,7 @@ footer {
 .menu-container {
   display: flex;
   max-width: 1300px;
-  margin-top:10px;  /* antes estaba 50px auto, bajalo */
+  margin: -15px auto;  /* antes estaba 50px auto, bajalo */
   gap: 40px;
   padding: 0 20px;    /* solo horizontal, sin padding-top */
 }
