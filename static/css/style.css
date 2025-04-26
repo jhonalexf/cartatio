@@ -10,7 +10,7 @@ html, body {
   background-size: cover;
   background-repeat: repeat-y;
   background-position: top center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -154,7 +154,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px; /* Esto los baja desde la barra */
+  margin-top: 100px; /* Esto los baja desde la barra */
   position: static; /* Quita el absolute que desalineaba */
 }
 
