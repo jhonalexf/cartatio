@@ -725,6 +725,7 @@ font-family: 'Open Sans', sans-serif;
         }
         .filtro-tamano-precio span {
           font-weight: bold;
+          color: white;
         }
         .fondo-historia {
           width: 100%;
