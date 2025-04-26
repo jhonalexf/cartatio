@@ -1,22 +1,11 @@
-from flask import Flask, render_template
-from flask import request
 
+from flask import Flask, render_template, request
+import os
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return render_template('index.html')
-
-@app.route('/historia')
-def historia():
-    return render_template('historia.html')
-
-@app.route('/menu')
-def menu():
-    platos = {
-
-         "ENCEBOLLADOS Y ALGO MÁS...": [
+platos = {
+     "ENCEBOLLADOS Y ALGO MÁS...": [
             
            
             {
@@ -261,8 +250,19 @@ def menu():
             }
         ],
 
-       
-    }
+    
+}
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/historia')
+def historia():
+    return render_template('historia.html')
+
+@app.route('/menu')
+def menu():
     return render_template('menu.html', platos=platos)
 
 @app.route('/ubicacion')
@@ -270,7 +270,5 @@ def ubicacion():
     return render_template('ubicacion.html')
 
 if __name__ == "__main__":
-    import os
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
-
