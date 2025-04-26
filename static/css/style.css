@@ -112,6 +112,8 @@ footer {
   width: 100%;
   position: relative;
   overflow: hidden;
+  flex-wrap: wrap; /* por si se achica en celular */
+
 }
 
 .logo-inicio img {
@@ -175,6 +177,15 @@ footer {
 
 .contenedor-galeria img:hover {
   transform: scale(1.02);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("../images/fondo_playa_movil.png"); /* fondo más liviano para móviles */
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /* ========== RESPONSIVE GENERAL ========== */
@@ -749,6 +760,16 @@ font-family: 'Open Sans', sans-serif;
           transform: scale(1.05);
           box-shadow: 0 30px 20px  rgba(0, 0, 0, 0.6);
         }
+                  /* Ajuste especial para móviles en sección de Historia */
+          @media screen and (max-width: 768px) {
+            .hero-historia {
+              background-image: url("../images/fondo_movil_historia.png"); /* <-- otro fondo más liviano o diferente para móviles */
+              background-attachment: scroll; /* no parallax en móviles */
+              background-size: cover;
+              background-position: center;
+              min-height: 400px; /* más pequeño para que no quede tanto espacio vacío */
+            }
+          }
 
           @media screen and (max-width: 768px) {
             .historia-contenido {
