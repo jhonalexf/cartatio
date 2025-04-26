@@ -221,7 +221,7 @@ footer {
   .contenedor-boton {
     display: flex;
     justify-content: center;
-    margin-top: 18px; /* Espacio entre logo y botón */
+    margin-top: 40px; /* Espacio entre logo y botón */
     position: static;
   }
 
