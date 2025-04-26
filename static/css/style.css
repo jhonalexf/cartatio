@@ -13,7 +13,7 @@ html, body {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
- overflow-x: hidden;
+
 }
 
 section {
@@ -778,18 +778,14 @@ font-family: 'Open Sans', sans-serif;
                   /* Ajuste especial para móviles en sección de Historia */
           @media screen and (max-width: 768px) {
             .hero-historia {
-              background-image: url("../images/movil1.png"); /* <-- otro fondo más liviano o diferente para móviles */
+              background-image: url("../images/fondo_movil_historia.png"); /* <-- otro fondo más liviano o diferente para móviles */
               background-attachment: scroll; /* no parallax en móviles */
               background-size: cover;
               background-position: center;
               min-height: 400px; /* más pequeño para que no quede tanto espacio vacío */
             }
           }
-          @media screen and (max-width: 768px) {
-            body {
-              background-color: #355f79;
-            }
-          }
+
           @media screen and (max-width: 768px) {
             .historia-contenido {
               flex-direction: column;
