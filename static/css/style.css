@@ -157,7 +157,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 98px; /* Esto los baja desde la barra, mientras mas sube el numero hay mas espacio */
+  margin-top: 78px; /* Esto los baja desde la barra, mientras mas sube el numero hay mas espacio */
   position: static; /* Quita el absolute que desalineaba */
 }
 
@@ -214,12 +214,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px; /* Esto los baja desde la barra */
+    margin-top: 23px; /* Esto los baja desde la barra */
     position: static; /* Quita el absolute que desalineaba */
   }
 
   .logo-inicio img {
-    max-width: 260px;
+    max-width: 290px;
     height: auto;
     position: static;
   }
