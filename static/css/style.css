@@ -200,7 +200,7 @@ footer {
     position: relative;
     text-align: center;
     width: 100%;
-    margin-top: 130px;
+    margin-top: 60px;
   }
 
   .logo-inicio img {
@@ -790,15 +790,15 @@ font-family: 'Open Sans', sans-serif;
           box-shadow: 0 30px 20px  rgba(0, 0, 0, 0.6);
         }
                   /* Ajuste especial para móviles en sección de Historia */
-          @media screen and (max-width: 768px) {
-            .hero-historia {
-              background-image: url("../images/movil_historia.png"); /* <-- otro fondo más liviano o diferente para móviles */
-              background-attachment: scroll; /* no parallax en móviles */
-              background-size: cover;
-              background-position: center;
-              min-height: 300px; /* más pequeño para que no quede tanto espacio vacío */
-            }
-          }
+                  @media screen and (max-width: 768px) {
+                    .hero-historia {
+                      background-image: url('../images/movil_historia.png');
+                      background-attachment: scroll; /* 👈 sin parallax para móvil */
+                      background-size: cover;
+                      background-position: center;
+                      min-height: 300px; /* ajustá si querés más alto */
+                    }
+                  }
 
           @media screen and (max-width: 768px) {
             .historia-contenido {
