@@ -2,8 +2,8 @@
 from flask import Flask, render_template, request
 import os
 
+app = Flask(__name__, static_url_path='/static')
 
-app = Flask(_name_, static_url_path='/static')
 
 platos = {
      "ENCEBOLLADOS Y ALGO MÁS...": [
