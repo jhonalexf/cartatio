@@ -200,6 +200,7 @@ footer {
     position: relative;
     text-align: center;
     width: 100%;
+    margin-top: 60px;
   }
 
   .logo-inicio img {
@@ -213,7 +214,7 @@ footer {
 
   .contenedor-boton {
     position: relative;
-    margin-top: 20px;
+    margin-top: 40px;
     bottom: 0;
     right: auto;
     left: auto;
