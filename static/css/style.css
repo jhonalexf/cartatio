@@ -50,6 +50,9 @@ footer {
   top: 0;
   z-index: 1000;
 }
+main {
+  margin-top: 90px; /* Espacio para la barra de navegación */
+}
 
 .container-nav {
   display: flex;
@@ -242,6 +245,8 @@ footer {
     background-attachment: scroll;
   }
 }
+
+
 
 
 .boton-inicio {
