@@ -10,6 +10,7 @@ html, body {
   background-size: cover;
   background-repeat: repeat-y;
   background-position: top center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
