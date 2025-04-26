@@ -127,6 +127,24 @@ footer {
     background-attachment: scroll;
   }
 }
+
+
+.boton-inicio {
+  background: #d3921a;
+  color: white;
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px 70px;
+  border-radius: 40px;
+  font-size: 2rem;
+  transition: background 0.3s ease;
+}
+
+.boton-inicio:hover {
+  background: #f57c00;
+}
+
 /* ========== GALERÍA INICIO ========== */
 .galeria-inicio {
   padding: 40px 20px;
