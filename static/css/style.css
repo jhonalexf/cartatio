@@ -191,7 +191,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   body {
-    background-image: url('../images/fondo1.png');
+    background-image: url('../images/fondoinicio.png');
   }
 }
 /* Responsive para pantallas pequeñas */
