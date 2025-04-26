@@ -157,7 +157,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 187px; /* Esto los baja desde la barra, mientras mas sube el numero hay mas espacio */
+  margin-top: 116px; /* Esto los baja desde la barra, mientras mas sube el numero hay mas espacio */
   position: static; /* Quita el absolute que desalineaba */
 }
 
