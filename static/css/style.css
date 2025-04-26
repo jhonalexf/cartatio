@@ -117,6 +117,14 @@ footer {
   flex-wrap: wrap; /* por si se achica en celular */
 
 }
+@media screen and (min-width: 769px) {
+  .inicio-tropical {
+    background-image: url('../images/fondo_playa.png'); /* o la imagen con palmeras */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+}
 
 .logo-inicio img {
   max-width: 430px;
