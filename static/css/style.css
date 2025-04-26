@@ -126,7 +126,14 @@ footer {
     background-position: center;
   }
 }
-
+@media screen and (max-width: 768px) {
+  .inicio-tropical {
+    background-image: url('../images/fondo_movil.png'); /* fondo limpio sin palmeras */
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+}
 .logo-inicio img {
   max-width: 430px;
   height: auto;
