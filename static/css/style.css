@@ -188,6 +188,11 @@ footer {
     background-position: center;
   }
 }
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #355f79;
+  }
+}
 /* Responsive para pantallas pequeñas */
 @media (max-width: 768px) {
   .seccion-principal {
