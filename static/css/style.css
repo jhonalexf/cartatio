@@ -194,42 +194,34 @@ footer {
     background-image: url('../images/fondoinicio.png');
   }
 }
+
 @media screen and (max-width: 768px) {
-  .logo-inicio {
-    text-align: center;
-    width: 100%;
-    position: relative;
+
+  .inicio-tropical {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 120px; /* menos espacio para que se vea mejor */
   }
 
   .logo-inicio img {
-    position: relative;
-    left: auto;
-    bottom: auto;
-    max-width: 270px;
-    margin: 0 auto;
-    display: block;
+    max-width: 240px;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .contenedor-boton {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+    bottom: 80px;
+    right: 50%;
+    transform: translateX(50%);
   }
 
   .boton-inicio {
-    padding: 15px 40px;
-    font-size: 1.4rem;
+    padding: 16px 40px;
+    font-size: 1.6rem;
   }
 
-  .inicio-tropical {
-    background-image: url('../images/fondo_movil_inicio.png'); /* tu fondo alternativo */
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-  }
 }
 
 /* (Continuaría aquí el resto de secciones como Tentaciones, Beneficios, etc., bien adaptadas también) */
