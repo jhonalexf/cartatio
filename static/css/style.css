@@ -1301,7 +1301,7 @@ font-family: 'Open Sans', sans-serif;
   /* Menú (Categorías y platos) */
   .menu-container {
     flex-direction: column;
-    margin: 70px auto;
+    margin: 50px auto;
     align-items: center;
   }
 
