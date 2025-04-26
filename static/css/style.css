@@ -7,9 +7,6 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   background-color: #355f79;
   background-image: url('../images/fondo_playa.png');
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-position: top center;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
